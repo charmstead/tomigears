@@ -3,10 +3,10 @@
 import React from "react";
 import Link from "next/link";
 import { signOut } from "next-auth/react";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export default function SideBar({ hide = false }) {
-  const router = usePathname();
+  const router = useRouter();
 
   console.log(router);
   return (
@@ -50,7 +50,10 @@ export default function SideBar({ hide = false }) {
               <a
                 role="button"
                 href="#"
-                onClick={() => signOut({ redirect: true, callbackUrl: `${window.location.origin}/login` })}
+                onClick={async () => {
+                  await signOut();
+                  router.push("/");
+                }}
               >
                 <i className="uk-margin-small-right" uk-icon="icon: sign-out"></i>
                 Logout
