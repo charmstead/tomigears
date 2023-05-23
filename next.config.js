@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  experimental: {
+    serverComponentsExternalPackages: ["mongoose", "passport-local-mongoose"],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

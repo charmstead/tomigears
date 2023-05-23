@@ -1,0 +1,70 @@
+.clearfix {
+    overflow: auto;
+  }
+
+.Active{
+  color: #555;
+  /* border-bottom: 2px solid #555; */
+}
+
+.Right{
+  margin-right: 50px!important;
+
+}
+
+@media (max-width: 768px) {
+  .Right{
+    margin-right: 20px!important;
+  }
+
+  .TextSmall{
+    font-size: 15px !important;
+  }
+
+  .HideLogOut_{
+    display: none;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .HideLogOut{
+    display: none;
+  }
+}
+
+/* .Toolbar{
+  margin-left: 250px;  
+  transition: all 0.5s  ease-in-out !important;
+  background-color: #D84126;
+  color: whitesmoke !important;
+  z-index: 980;
+}
+.Toolbar a{
+
+  color: whitesmoke !important;
+}
+
+.Height{
+  height: 50px;
+}
+
+:global header.sideActive{
+  margin-left: 50px !important;
+  transition: all 0.5s  ease-in-out !important;
+}
+
+.Svg svg *{
+  stroke-width: 1.5px;
+}
+
+@media (max-width: 768px) {
+
+  header {
+      margin-left: 0 !important;
+      padding: 0 0.6em;
+  }
+
+
+} */
