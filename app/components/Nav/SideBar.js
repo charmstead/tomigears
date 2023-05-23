@@ -3,8 +3,12 @@
 import React from "react";
 import Link from "next/link";
 import { signOut } from "next-auth/react";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function SideBar({ hide = false }) {
+  const router = usePathname();
+
+  console.log(router);
   return (
     !hide && (
       <>
@@ -35,7 +39,7 @@ export default function SideBar({ hide = false }) {
               <Link href="/repairs">Repairs</Link>
             </li>
             <li className="uk-active">
-              <Link href="/bookings">Appointments</Link>
+              <Link href="/booking">Appointments</Link>
             </li>
           </ul>
           <ul className="uk-nav uk-nav-default tm-nav">
@@ -43,7 +47,11 @@ export default function SideBar({ hide = false }) {
               <Link href="/settings">Setting</Link>
             </li>
             <li className="uk-active">
-              <a role="button" href="#" onClick={() => signOut({ redirect: true, callbackUrl: "/login" })}>
+              <a
+                role="button"
+                href="#"
+                onClick={() => signOut({ redirect: true, callbackUrl: `${window.location.origin}/login` })}
+              >
                 <i className="uk-margin-small-right" uk-icon="icon: sign-out"></i>
                 Logout
               </a>
