@@ -26,7 +26,7 @@ const Main = () => {
 
         <section className={["tm-text-white uk-text-center", inter.className].join(" ")} style={{ zIndex: "2" }}>
           <div className="bg-fade uk-padding-small" style={{ fontSize: "2rem", fontWeight: "500" }}>
-            Software Development. Service Management toolkit.
+            Software Development. Repair Service Management toolkit.
           </div>
           <div className="uk-margin-bottom">The ultimate Management toolkit for artisan and service shops.</div>
           <Link href="/booking">
