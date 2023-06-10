@@ -19,7 +19,7 @@ const Banner = () => {
       >
         <div className="uk-margin-top uk-margin-large-left">
           <div className="uk-text-large uk-text-bold">Tomigears Limited</div>
-          <div className="uk-text-small">140 N 2nd st, Stroudsburg, PA</div>
+          {/* <div className="uk-text-small">140 N 2nd st, Stroudsburg, PA</div> */}
         </div>
       </div>
       <style jsx>{`

@@ -2,6 +2,7 @@
 const nextConfig = {
   experimental: {
     serverComponentsExternalPackages: ["mongoose", "passport-local-mongoose"],
+    // serverActions: true,
   },
 };
 

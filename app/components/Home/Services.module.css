@@ -1,0 +1,12 @@
+@media (max-width: 640px) {
+  .height {
+    height: 80vh;
+    font-size: small;
+  }
+}
+
+@media (max-width: 768px) {
+  .height {
+    font-size: xx-small;
+  }
+}

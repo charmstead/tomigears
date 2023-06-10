@@ -76,10 +76,9 @@ a {
   .tm-table-stripe * > th {
     text-align: left !important;
   }
-}
-
-.push-layout {
-  margin-left: 240px;
+  .push-layout {
+    margin-left: 240px;
+  }
 }
 
 /* html,

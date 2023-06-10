@@ -33,22 +33,41 @@ const NavBar = ({ session }) => {
             </li>
           </ul>
         </div>
-        {session?.user?._id ? null : (
-          <div className="uk-navbar-right uk-margin-right">
-            <ul className="uk-navbar-nav uk-dropnav" uk-dropnav="">
+
+        <div className="uk-navbar-right uk-visible@m">
+          <ul className="uk-navbar-nav ">
+            <li className="">
+              <Link className="uk-text-primary" href="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <a href="#services" className="uk-text-primary">
+                Service
+              </a>
+            </li>
+            <li className="" className="uk-text-primary">
+              <a href="#contact_us" className="uk-text-primary">
+                Contact
+              </a>
+            </li>
+            <li className="">
+              <Link className="uk-text-primary" href="/booking">
+                Appointment
+              </Link>
+            </li>
+            {session?.user?._id ? null : (
               <li className="">
                 <Link href={LINKS.LOGIN}>
                   <button className="uk-button uk-button-primary uk-button-small">Login</button>
                 </Link>
               </li>
-              <li className="">
-                <Link className="uk-text-primary" href={LINKS.SIGNUP}>
-                  <button className="uk-button uk-text-primary tm-outline-primary uk-button-small">Sign up</button>
-                </Link>
-              </li>
-            </ul>
-          </div>
-        )}
+            )}
+          </ul>
+        </div>
+        <div className="uk-navbar-right uk-margin-right">
+          <ul className="uk-navbar-nav uk-dropnav" uk-dropnav=""></ul>
+        </div>
       </nav>
       <style jsx>
         {`

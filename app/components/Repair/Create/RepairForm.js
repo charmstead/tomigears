@@ -4,7 +4,6 @@ import * as Yup from "yup";
 import { decimalInputHandler, getRandomString } from "@/utility/utility";
 
 const RepairForm = ({ values, setFieldValue, session, touched, errors }) => {
-  console.log(values);
   return (
     <React.Fragment>
       <Form className="uk-form-stacked">

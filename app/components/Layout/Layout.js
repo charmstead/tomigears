@@ -3,13 +3,7 @@ import SideBar from "components/Nav/SideBar";
 import { LINKS } from "utility/sitemap";
 import { useState, useEffect } from "react";
 
-const toExclude = [
-  LINKS.SIGNUP,
-  LINKS.LOGIN,
-  "hospital/preview",
-  "/doctor",
-  "/",
-].join("|");
+const toExclude = [LINKS.SIGNUP, LINKS.LOGIN, "hospital/preview", "/doctor", "/"].join("|");
 
 const Layout = ({ children, pathname }) => {
   const [hideSideBar, setHideSideBar] = useState(false);
@@ -34,9 +28,7 @@ const Layout = ({ children, pathname }) => {
       <div className="uk-height-1-1">
         <NavBar />
         <SideBar hide={hideSideBar} />
-        <section className="uk-container-expand push_layout uk-height-1-1">
-          {children}
-        </section>
+        <section className="uk-container-expand push_layout uk-height-1-1">{children}</section>
       </div>
     </>
   );

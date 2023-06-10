@@ -14,8 +14,8 @@ const TitleGrid = () => {
             </div>
             <div className="uk-width-expand">
               <div className="uk-text-bold uk-text-emphasis">Tomigears Limited</div>
-              <a href="http://www.tomigears.com" target="_blank" className="uk-text-small uk-">
-                www.tomigears.com
+              <a href="http://www.tomigears.org" target="_blank" className="uk-text-small uk-">
+                www.tomigears.org
               </a>
             </div>
           </div>
@@ -25,7 +25,7 @@ const TitleGrid = () => {
       <div>
         <div>
           <span href="" className="uk-icon-button uk-text-primary" uk-icon="receiver"></span>
-          <span> 07 5454 5454</span>
+          <span> 1 302-665-9701</span>
         </div>
       </div>
 

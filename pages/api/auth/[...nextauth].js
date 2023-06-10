@@ -22,6 +22,8 @@ export const authOptions = {
 
         if (!user) throw new Error("Invalid credentials");
 
+        if (!user?.emailVerified) throw new Error("Your account is awaiting approval.");
+
         const { salt, hash, ...account } = user.toObject();
 
         return account;

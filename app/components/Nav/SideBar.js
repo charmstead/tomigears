@@ -8,7 +8,6 @@ import { useRouter } from "next/navigation";
 export default function SideBar({ hide = false }) {
   const router = useRouter();
 
-  console.log(router);
   return (
     !hide && (
       <>

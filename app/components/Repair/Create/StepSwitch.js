@@ -5,6 +5,7 @@ import React from "react";
 const noop = () => {};
 
 const StepSwitch = ({ step }) => {
+  console.log(step == 1);
   return (
     <div>
       <RadioGroup activeClass="RadioGroup">
