@@ -16,15 +16,16 @@ export default function Home() {
             <div>Definitions</div>
             <ul className="uk-list uk-list-disc">
               <li>
-                "Tomigears," "we," "us," or "our" refers to Tomigears, the organization offering software development
-                and gadget repair services.
+                &quot;Tomigears,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot; refers to Tomigears, the
+                organization offering software development and gadget repair services.
               </li>
               <li>
-                "Website" refers to the Tomigears website located at{" "}
+                &quot;Website&quot; refers to the Tomigears website located at{" "}
                 <a href="http://www.tomigears.org">www.tomigears.org</a>.
               </li>
               <li>
-                "User," "you," or "your" refers to any individual or entity accessing or using our website or services.
+                &quot;User,&quot; &quot;you,&quot; or &quot;your&quot; refers to any individual or entity accessing or
+                using our website or services.
               </li>
             </ul>
           </li>

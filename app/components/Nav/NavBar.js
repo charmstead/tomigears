@@ -46,7 +46,7 @@ const NavBar = ({ session }) => {
                 Service
               </a>
             </li>
-            <li className="" className="uk-text-primary">
+            <li className="uk-text-primary">
               <a href="#contact_us" className="uk-text-primary">
                 Contact
               </a>

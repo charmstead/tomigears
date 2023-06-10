@@ -6,7 +6,7 @@ import Locations from "./Locations";
 const ContactUs = () => {
   return (
     <>
-      <h2 className="uk-text-title">Let's Talk!</h2>
+      <h2 className="uk-text-title">Let&apos;s Talk!</h2>
 
       <section className="uk-grid uk-grid-small uk-grid-match" uk-grid={1}>
         <div className="uk-width-1-3@m ">
