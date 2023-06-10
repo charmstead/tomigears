@@ -54,9 +54,9 @@ const Practioners = () => {
                   <span className="uk-label uk-label-warning uk-text-capitalize">Tomorrow, 11:15Am Onwards</span>
                 </label>
               </div>
-              <div>
+              {/* <div>
                 <a className="uk-button uk-text-capitalize uk-text-small uk-button-primary">Book Now</a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
