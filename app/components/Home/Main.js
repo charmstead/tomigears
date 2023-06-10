@@ -22,6 +22,7 @@ const STORE_ICONS = [zara, amazon, apple, ebay, asos, nike, adiddas];
 const Rating = [
   { item: "Purchases", count: "20,000" },
   { item: "Repairs", count: "7,000" },
+  { item: "Customers", count: "2,000+" },
   { item: "Solutions", count: "100+" },
 ];
 
