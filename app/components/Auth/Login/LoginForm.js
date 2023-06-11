@@ -94,8 +94,8 @@ const FormikLoginForm = withFormik({
       }
 
       if (callback?.error) {
-        console.log(callback);
-        warningAlert({ message: "Invalid email or password." });
+        console.log(callback.error);
+        warningAlert({ message: callback.error });
       }
     });
   },

@@ -56,17 +56,64 @@ const NavBar = ({ session }) => {
                 Appointment
               </Link>
             </li>
-            {session?.user?._id ? null : (
-              <li className="">
+
+            <li className="">
+              {session?.user?._id ? (
+                <Link href="/home">
+                  <button className="uk-button uk-button-primary uk-button-small">Dashboard</button>
+                </Link>
+              ) : (
                 <Link href={LINKS.LOGIN}>
                   <button className="uk-button uk-button-primary uk-button-small">Login</button>
                 </Link>
-              </li>
-            )}
+              )}
+            </li>
           </ul>
         </div>
         <div className="uk-navbar-right uk-margin-right">
-          <ul className="uk-navbar-nav uk-dropnav" uk-dropnav=""></ul>
+          <ul className="uk-navbar-nav uk-hidden@m">
+            <li>
+              <a href="#">
+                <span class="uk-margin-small-right" uk-icon="icon: table"></span>
+              </a>
+              <div className="uk-navbar-dropdown">
+                <ul className="uk-nav uk-navbar-dropdown-nav">
+                  <li className="">
+                    <Link className="uk-text-primary" href="/">
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <a href="#services" className="uk-text-primary">
+                      Service
+                    </a>
+                  </li>
+                  <li className="uk-text-primary">
+                    <a href="#contact_us" className="uk-text-primary">
+                      Contact
+                    </a>
+                  </li>
+                  <li className="">
+                    <Link className="uk-text-primary" href="/booking">
+                      Appointment
+                    </Link>
+                  </li>
+
+                  <li className="">
+                    {session?.user?._id ? (
+                      <Link href="/home">
+                        <button className="uk-button uk-button-primary uk-button-small">Dashboard</button>
+                      </Link>
+                    ) : (
+                      <Link href={LINKS.LOGIN}>
+                        <button className="uk-button uk-button-primary uk-button-small">Login</button>
+                      </Link>
+                    )}
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
       </nav>
       <style jsx>

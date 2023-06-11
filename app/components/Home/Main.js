@@ -51,8 +51,7 @@ const Main = () => {
             Software Development. Gadgets Procurement and Repair Service Management.
           </div>
           <div className="uk-margin-bottom">
-            {" "}
-            One stop solution to Software Development, Gadgets Procurement and Repair Service Management.
+            {/* One stop solution to Software Development, Gadgets Procurement and Repair Service Management. */}
           </div>
           <Link href="/booking">
             <button className="uk-button uk-border-pill uk-button-default tm-text-white">Book now</button>
@@ -71,7 +70,6 @@ const Main = () => {
           <div className="uk-text-bold">Shop with ease from your favourite e-commerce stores in the USA</div>
           <div className="uk-grid uk-grid-small uk-flex-between  uk-child-width-auto">
             {STORE_ICONS.map((icon, i) => {
-              console.log(icon);
               return (
                 <div key={i + "store_icon"}>
                   <div>
